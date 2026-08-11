@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Run the Director. Requires the `claude` CLI on PATH (or set GATEWAY_CLAUDE_CMD
+# to however you launch Claude Code, e.g. a wrapper that resolves your environment).
+exec python "$(dirname "$0")/../scripts/director.py" "$@"

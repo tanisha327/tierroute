@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Launch the web UI. Requires the `claude` CLI on PATH (or set GATEWAY_CLAUDE_CMD).
+exec python "$(dirname "$0")/../scripts/ui.py" "$@"

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Macro-Planner + Model Director launcher.
+exec python "$(dirname "$0")/../scripts/director.py" "$@"

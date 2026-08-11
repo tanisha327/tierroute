@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+data/tool_audit.log
+data/director_cache.json
+config.json
+.venv/
+# Local-only Claude Code settings (machine/user specific)
+.claude/settings.local.json
+# Local research PDFs (not redistributed)
+*.pdf
+.pytest_cache
+.ruff_cache

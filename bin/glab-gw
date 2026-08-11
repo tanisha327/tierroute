@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Zero-Trust GitLab CLI shim -> forwards to the guarded glab wrapper.
+exec python "$(dirname "$0")/../scripts/glab_gw.py" "$@"

@@ -1,0 +1,33 @@
+{
+  "tools": {
+    "gitlab": {
+      "binary": "glab",
+      "token_env": "GATEWAY_GITLAB_TOKEN",
+      "host": "gitlab.com",
+      "audit_log": "data/tool_audit.log",
+      "policy": {
+        "mode": "allowlist",
+        "allow": ["auth status", "api", "mr list", "mr view", "mr diff",
+                  "mr create", "mr update",
+                  "issue list", "issue view", "repo view", "repo clone",
+                  "ci list", "ci view", "ci status", "release list", "release view"],
+        "deny": ["repo delete", "repo archive", "mr merge", "mr delete",
+                 "mr close", "issue delete",
+                 "issue create", "issue close", "issue update",
+                 "release delete", "release create", "auth login", "auth logout"],
+        "api_allowed_methods": ["GET"]
+      }
+    },
+    "git": {
+      "binary": "git",
+      "token_env": "GATEWAY_GITLAB_TOKEN",
+      "username": "oauth2",
+      "audit_log": "data/tool_audit.log",
+      "policy": {
+        "mode": "blocklist",
+        "allow": [],
+        "deny": ["push --mirror"]
+      }
+    }
+  }
+}
