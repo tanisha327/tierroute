@@ -264,7 +264,7 @@ knowing (all tunable, see `--help`):
 
 ---
 
-# Part 3. The browser window, step by step
+# Part 3. Demo
 
 If you would rather click buttons than type flags, start the browser window:
 
